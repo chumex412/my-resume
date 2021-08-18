@@ -57,6 +57,10 @@ const StyledMain = styled.main`
       padding: 1rem 0;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    max-width: 95%;
+  }
 `;
 
 export default Main;
