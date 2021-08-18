@@ -4,37 +4,41 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
 
+// Animation 
+import { motion } from 'framer-motion';
+import { titleAnim, fade } from './animation';
+
 const Hobby = () => {
 
   return (
     <Container>
       <SectionHeader>
         <Hide>
-          <h2 className="h3">
+          <motion.h2 variants={titleAnim} className="h3">
             Hobby
-          </h2>
+          </motion.h2>
         </Hide>
       </SectionHeader>
 
       <HobDescription>
         <ul>
-          <li>
+          <motion.li variants={fade}>
             <div className="flex">
               <div className="top-dot"></div>
               <p className="parag">
                 Travelled to 25 Nigerian states, witnessed diverse cultures, enjoyed several local dishes within the duration   of the travel.
               </p>
             </div>
-          </li>
+          </motion.li>
 
-          <li>
+          <motion.li variants={fade}>
             <div className="flex">
               <div className="bottom-dot"></div>
               <p className="parag">
                 Building and updating features of personal web development projects during free hours.
               </p>
             </div>
-          </li>
+          </motion.li>
         </ul>
       </HobDescription>
     </Container>

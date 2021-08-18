@@ -4,20 +4,24 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
 
+// Animation 
+import { motion } from 'framer-motion';
+import { titleAnim, shrink } from './animation';
+
 const Experience = () => {
 
   return (
     <Container>
       <SectionHeader>
         <Hide>
-          <h2 className="h3">
+          <motion.h2 variants={titleAnim} className="h3">
             Work Experience
-          </h2>
+          </motion.h2>
         </Hide>
       </SectionHeader>
 
       <ExpDescription>
-        <div>
+        <motion.div variants={shrink}>
           <header>
             <Hide>
               <h3 className="h4">
@@ -31,9 +35,9 @@ const Experience = () => {
           <p className="parag">
             Formed a team of frontend developers where UI designs were transformed into webpages, and improved other skills necessary for the growth of frontend developers by brainstorming through real problems, their tangible solutions and working on real life projects during the 3 months fully remote internship.
           </p>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div variants={shrink}>
           <header>
             <Hide>
               <h3 className="h4">
@@ -59,7 +63,7 @@ const Experience = () => {
               </FlexedWrapper>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </ExpDescription>
     </Container>
   );

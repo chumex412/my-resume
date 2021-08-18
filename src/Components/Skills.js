@@ -1,7 +1,18 @@
 import React from 'react';
 
 // Styles
-import { Container, Hide, Description, Dot, FlexedWrapper, SectionHeader } from '../style/styles';
+import { 
+  Container, 
+  Hide, 
+  Description, 
+  Dot, 
+  FlexedWrapper, 
+  SectionHeader,
+} from '../style/styles';
+
+// Animation
+import { motion } from 'framer-motion';
+import { titleAnim, fade } from './animation';
 
 const Summary = () => {
 
@@ -9,59 +20,57 @@ const Summary = () => {
     <Container>
       <SectionHeader>
         <Hide>
-          <h2 className="h3">
+          <motion.h2 variants={titleAnim} className="h3">
             Key Skills
-          </h2>
+          </motion.h2>
         </Hide>
       </SectionHeader>
       
       <Description>
         <ul className="row">
-          <li className="col-2">
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Strong problem solving</p>              
             </FlexedWrapper>
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Team player</p>
             </FlexedWrapper>
-            
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Good interpersonal skills</p>
             </FlexedWrapper>
-            
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Web development</p>
             </FlexedWrapper>    
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Analytical thinking</p>
             </FlexedWrapper>
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Effective communication</p>
             </FlexedWrapper>
-          </li>
-          <li className="col-2">
+          </motion.li>
+          <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
               <Dot></Dot>
               <p className="parag">Time Management</p>
             </FlexedWrapper>
-            
-          </li>
+
+          </motion.li>
         </ul>
       </Description>
     </Container>

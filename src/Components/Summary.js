@@ -3,15 +3,19 @@ import React from 'react';
 // Styles
 import { SectionHeader, Container, Hide, Description } from '../style/styles';
 
+// Animation
+import { titleAnim } from './animation';
+import { motion } from 'framer-motion';
+
 const Summary = () => {
   
   return(
     <Container>
       <SectionHeader>
         <Hide>
-          <h2 className="h3">
+          <motion.h2 variants={titleAnim} className="h3">
             Professional Summary
-          </h2>
+          </motion.h2>
         </Hide>
       </SectionHeader>
 
