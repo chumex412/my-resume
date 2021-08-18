@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { user } from './userData';
+// Style
 import styled from 'styled-components';
 import { Hide } from '../style/styles';
 
@@ -8,20 +11,21 @@ import { pageAnimation, titleAnim } from './animation';
 
 const Header = () => {
 
+  const fullName = `${user.lastName} ${user.firstName} ${user.otherNames}`;
   return (
     <StyledHeader  variants={pageAnimation} initial="hidden" animate="show">
       <Hide>
-        <motion.h1 variants={titleAnim} className="h2">OFILI CHUKWUEMEKA TIMOTHY</motion.h1>
+        <motion.h1 variants={titleAnim} className="h2">{fullName}</motion.h1>
       </Hide>
       <Hide>
         <motion.p variants={titleAnim} className="parag">
-          <span>Tel no: 08135704503.</span>&nbsp;
-          <span>Email: chumex412@gmail.com.</span>
+          <span>Tel no: {user.phone}.</span>&nbsp;
+          <span>Email: {user.email}.</span>
         </motion.p>
       </Hide>
       <Hide>
         <motion.p variants={titleAnim} className="parag">
-          No. 25, Chukun road Karatudu New Extension, Gonin-gora, Kaduna.
+          {user.address}
         </motion.p>
       </Hide>
     </StyledHeader>
@@ -33,6 +37,10 @@ const StyledHeader = styled(motion.header)`
   color: var(--secondary-color);
   background-color: var(--primary-color);
   text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+  }
 `;
 
 export default Header;
