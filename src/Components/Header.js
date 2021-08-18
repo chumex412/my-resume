@@ -1,19 +1,27 @@
 import React from 'react';
 
 import { user } from './userData';
+import logo from '../Zuri-logo.svg';
 // Style
 import styled from 'styled-components';
 import { Hide } from '../style/styles';
 
 // Animation 
 import { motion } from 'framer-motion';
-import { pageAnimation, titleAnim } from './animation';
+import { pageAnimation, titleAnim, expand } from './animation';
 
 const Header = () => {
 
   const fullName = `${user.lastName} ${user.firstName} ${user.otherNames}`;
+
+  document.title = `${user.firstName}'s resume`;
+  console.log(fullName);
+
   return (
     <StyledHeader  variants={pageAnimation} initial="hidden" animate="show">
+      <Hide>
+        <motion.img variants={expand} src={logo} alt="Zuri logo" />
+      </Hide>
       <Hide>
         <motion.h1 variants={titleAnim} className="h2">{fullName}</motion.h1>
       </Hide>
