@@ -2,7 +2,7 @@ import React from 'react';
 
 // Styles
 import styled from 'styled-components';
-import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
+import { Container, SectionHeader, Hide, Description } from '../style/styles';
 
 import { useScroll } from './useScroll';
 
