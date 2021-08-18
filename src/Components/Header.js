@@ -20,7 +20,10 @@ const Header = () => {
   return (
     <StyledHeader  variants={pageAnimation} initial="hidden" animate="show">
       <Hide>
-        <motion.a variants={expand} href="https://internship.zuri.team">
+        <motion.a
+         variants={ expand } 
+         href="https://internship.zuri.team"
+        >
           <img src={logo} alt="Zuri logo" />
         </motion.a>
       </Hide>
