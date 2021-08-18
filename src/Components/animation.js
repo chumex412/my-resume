@@ -34,3 +34,20 @@ export const fade = {
     transition: { duration: 0.75, ease: 'easeOut' }
   }
 }
+
+export const sectionFade = {
+  hidden: {opacity: 0},
+  show: {
+    opacity: 1,
+    transition: { duration: 0.5, ease: 'easeOut' }
+  }
+}
+
+export const expand = {
+  hidden: { scale: 0.8, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.75, ease: 'easeOut' }
+  }
+}
