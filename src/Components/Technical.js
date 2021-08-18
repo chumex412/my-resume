@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { useScroll } from './useScroll';
-
 // Styles
 import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
 
@@ -10,10 +8,9 @@ import { motion } from 'framer-motion';
 import { titleAnim, fade } from './animation';
 
 const Technical = () => {
-  const [element, controls] = useScroll();
 
   return (
-    <Container variants={fade} animate={controls} initial="hidden" ref={element}>
+    <Container>
       <SectionHeader>
         <Hide>
           <motion.h2 variants={titleAnim} className="h3">
