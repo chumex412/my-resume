@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/my-resume/static/js/main.c3c4cff5.chunk.js",
+    "main.js.map": "/my-resume/static/js/main.c3c4cff5.chunk.js.map",
+    "runtime-main.js": "/my-resume/static/js/runtime-main.a9c0af49.js",
+    "runtime-main.js.map": "/my-resume/static/js/runtime-main.a9c0af49.js.map",
+    "static/js/2.ede5cf69.chunk.js": "/my-resume/static/js/2.ede5cf69.chunk.js",
+    "static/js/2.ede5cf69.chunk.js.map": "/my-resume/static/js/2.ede5cf69.chunk.js.map",
+    "static/js/3.862bac53.chunk.js": "/my-resume/static/js/3.862bac53.chunk.js",
+    "static/js/3.862bac53.chunk.js.map": "/my-resume/static/js/3.862bac53.chunk.js.map",
+    "index.html": "/my-resume/index.html",
+    "static/js/2.ede5cf69.chunk.js.LICENSE.txt": "/my-resume/static/js/2.ede5cf69.chunk.js.LICENSE.txt",
+    "static/media/Zuri-logo.58a702d4.svg": "/my-resume/static/media/Zuri-logo.58a702d4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9c0af49.js",
+    "static/js/2.ede5cf69.chunk.js",
+    "static/js/main.c3c4cff5.chunk.js"
+  ]
+}
