@@ -20,7 +20,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
 
