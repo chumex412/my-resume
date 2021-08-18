@@ -4,14 +4,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
 
+import { useScroll } from './useScroll';
+
 // Animation 
 import { motion } from 'framer-motion';
-import { titleAnim, fade } from './animation';
+import { titleAnim, sectionFade, expand } from './animation';
 
 const Hobby = () => {
+  const [element, controls] = useScroll();
 
   return (
-    <Container>
+    <Container variants={sectionFade} animate={controls} initial="hidden" ref={element}>
       <SectionHeader>
         <Hide>
           <motion.h2 variants={titleAnim} className="h3">
@@ -22,7 +25,7 @@ const Hobby = () => {
 
       <HobDescription>
         <ul>
-          <motion.li variants={fade}>
+          <motion.li variants={expand}>
             <div className="flex">
               <div className="top-dot"></div>
               <p className="parag">
@@ -31,7 +34,7 @@ const Hobby = () => {
             </div>
           </motion.li>
 
-          <motion.li variants={fade}>
+          <motion.li variants={expand}>
             <div className="flex">
               <div className="bottom-dot"></div>
               <p className="parag">

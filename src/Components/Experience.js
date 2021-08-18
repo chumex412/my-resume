@@ -1,17 +1,20 @@
 import React from 'react';
 
+import { useScroll } from './useScroll';
+
 // Styles
 import styled from 'styled-components';
 import { Container, SectionHeader, Hide, Description, FlexedWrapper, Dot } from '../style/styles';
 
 // Animation 
 import { motion } from 'framer-motion';
-import { titleAnim, shrink } from './animation';
+import { titleAnim, shrink, fade } from './animation';
 
 const Experience = () => {
+  const [element, controls] = useScroll();
 
   return (
-    <Container>
+    <Container variants={fade} animate={controls} initial="hidden" ref={element}>
       <SectionHeader>
         <Hide>
           <motion.h2 variants={titleAnim} className="h3">
