@@ -39,7 +39,7 @@ export const Dot = styled.div`
 
 export const FlexedWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
 `;
 
 export const Hide = styled.div`

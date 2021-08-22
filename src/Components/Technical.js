@@ -23,27 +23,35 @@ const Technical = () => {
         <ul className="row">
           <motion.li variants={fade} className="col-3">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>Languages:</strong> HTML</p>
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-3">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>Scripting Languages:</strong> JavaScript</p>
             </FlexedWrapper>
           </motion.li>
 
           <motion.li variants={fade} className="col-3">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>Framework/Library:</strong> Bootstrap, React</p>
             </FlexedWrapper>
           </motion.li>
 
           <motion.li variants={fade} className="col-3">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>Others:</strong> CSS, SASS</p>
             </FlexedWrapper>
           </motion.li>

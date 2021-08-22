@@ -27,7 +27,9 @@ const Education = () => {
         <ul>
           <motion.li variants={fade}>
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>NATIONAL YOUTH SERVICE CORP | 2016 – 2017.</strong></p>
             </FlexedWrapper>
             <div className="sub">
@@ -37,7 +39,9 @@ const Education = () => {
 
           <motion.li  variants={fade}>
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>FEDERAL UNIVERSITY OF TECHNOLOGY, MINNA, NIGER STATE. | 2011 – 2015.</strong></p>
             </FlexedWrapper>
             <div className="sub">
@@ -47,7 +51,9 @@ const Education = () => {
 
           <motion.li variants={fade}>
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag"><strong>AUNTIE RAMATU COLLEGE, KATSINA | 2006 – 2009</strong></p>
             </FlexedWrapper>
             <div className="sub">

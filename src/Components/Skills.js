@@ -30,43 +30,57 @@ const Summary = () => {
         <ul className="row">
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Strong problem solving</p>              
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Team player</p>
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Good interpersonal skills</p>
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Web development</p>
             </FlexedWrapper>    
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Analytical thinking</p>
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Effective communication</p>
             </FlexedWrapper>
           </motion.li>
           <motion.li variants={fade} className="col-2">
             <FlexedWrapper>
-              <Dot></Dot>
+              <div>
+                <Dot></Dot>
+              </div>
               <p className="parag">Time Management</p>
             </FlexedWrapper>
 

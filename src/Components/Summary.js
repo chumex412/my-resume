@@ -21,7 +21,7 @@ const Summary = () => {
 
       <Description>
         <p className="parag">
-          Very passionate about contributing to the growth and development of top-notch/start-up organizations/companies through hard-work, team collaboration and continuous learning.
+          A frontend developer skilled at using frontend technologies/tools  and passionate about contributing to the growth and development of top-notch/start-up organizations/companies through hard-work, team collaboration and continuous learning.
         </p>
       </Description>
     </Container>
