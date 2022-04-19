@@ -25,24 +25,13 @@ const Education = () => {
 
       <EduDescription>
         <ul>
-          <motion.li variants={fade}>
-            <FlexedWrapper>
-              <div>
-                <Dot></Dot>
-              </div>
-              <p className="parag"><strong>NATIONAL YOUTH SERVICE CORP | 2016 – 2017.</strong></p>
-            </FlexedWrapper>
-            <div className="sub">
-              <p className="parag"><strong>N.Y.S.C Discharge Certificate.</strong></p>
-            </div>
-          </motion.li>
 
           <motion.li  variants={fade}>
             <FlexedWrapper>
               <div>
                 <Dot></Dot>
               </div>
-              <p className="parag"><strong>FEDERAL UNIVERSITY OF TECHNOLOGY, MINNA, NIGER STATE. | 2011 – 2015.</strong></p>
+              <p className="parag"><strong>FEDERAL UNIVERSITY OF TECHNOLOGY, MINNA, NIGER STATE</strong></p>
             </FlexedWrapper>
             <div className="sub">
               <p className="parag"><strong>BTech Biochemistry.</strong></p>
@@ -54,7 +43,7 @@ const Education = () => {
               <div>
                 <Dot></Dot>
               </div>
-              <p className="parag"><strong>AUNTIE RAMATU COLLEGE, KATSINA | 2006 – 2009</strong></p>
+              <p className="parag"><strong>AUNTIE RAMATU COLLEGE, KATSINA</strong></p>
             </FlexedWrapper>
             <div className="sub">
               <p className="parag"><strong>SSCE.</strong></p>
